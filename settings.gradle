@@ -1,0 +1,9 @@
+include ':network'
+include ':course'
+include ':mine'
+include ':study'
+include ':common'
+include ':login'
+include ':home'
+include ':app'
+rootProject.name = "OnlineEducation"
