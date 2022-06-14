@@ -1,4 +1,3 @@
-include ':network'
 include ':course'
 include ':mine'
 include ':study'
