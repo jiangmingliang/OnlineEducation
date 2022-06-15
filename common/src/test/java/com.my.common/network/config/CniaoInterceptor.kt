@@ -11,18 +11,6 @@ import okio.Buffer
 
 
 /**
- * 作者： 志威  zhiwei.org
- * 主页： Github: https://github.com/zhiwei1990
- * 日期： 2020年08月21日 23:20
- * 签名： 天行健，君子以自强不息；地势坤，君子以厚德载物。
- *      _              _           _     _   ____  _             _ _
- *     / \   _ __   __| |_ __ ___ (_) __| | / ___|| |_ _   _  __| (_) ___
- *    / _ \ | '_ \ / _` | '__/ _ \| |/ _` | \___ \| __| | | |/ _` | |/ _ \
- *   / ___ \| | | | (_| | | | (_) | | (_| |  ___) | |_| |_| | (_| | | (_) |
- *  /_/   \_\_| |_|\__,_|_|  \___/|_|\__,_| |____/ \__|\__,_|\__,_|_|\___/  -- 志威 zhiwei.org
- *
- * You never know what you can do until you try !
- * ----------------------------------------------------------------
  * 项目相关，添加公共header的拦截器
  */
 class CniaoInterceptor : Interceptor {
@@ -43,14 +31,11 @@ class CniaoInterceptor : Interceptor {
             "appid" to NET_CONFIG_APPID,
             "platform" to "android",//如果重复请求，可能会报重复签名错误，yapi 平台标记则不会
             "timestamp" to System.currentTimeMillis().toString(),
-
             "brand" to DeviceUtils.getManufacturer(),
             "model" to DeviceUtils.getModel(),
             "uuid" to DeviceUtils.getUniqueDeviceId(),
             "network" to NetworkUtils.getNetworkType().name,
             "system" to DeviceUtils.getSDKVersionName(),
-
-
             "version" to AppUtils.getAppVersionName()
 
         )
